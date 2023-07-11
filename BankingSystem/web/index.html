@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .content {
+                position: absolute;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+            }
+            .sub{background-color: #4CAF50;
+                 color: white;
+                 width: 100%;
+                 padding: 16px 20px;
+                 border: none;
+            }
+            input[type=text], input[type=password] {
+                width: 85%;
+                padding: 15px;
+                margin: 5px 0 20px 0;
+                border: none;
+                background: #f1f1f1;
+            }
+            body {
+                background-color:steelblue;
+            }
+            h1{
+                text-align: center;
+                color: white;
+                font-size: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Online Banking </h1>
+        <div class="content">
+            <form action="validate" method="post">
+                <table>
+                    <tr>
+                    <h2>Enter Data</h2>
+                    
+                    <td class="col">UserName<input type="text" name="username" placeholder="Enter ID"></td>
+                    </tr>
+                    <tr>
+                        <td>Password<input type="password" name="password" placeholder="Enter Password"></td>
+                    </tr>
+                </table>
+                <br>
+                <input type="submit" name="submit" value="Login" class="sub">
+            </form>
+        </div>
+    </body>
+</html>
